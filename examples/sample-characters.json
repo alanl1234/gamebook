@@ -1,0 +1,71 @@
+{
+  "gamebook": {
+    "version": "1.0",
+    "meta": {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "type": "narrative",
+      "totalChapters": 61,
+      "extractedAt": "2026-06-04T00:00:00Z"
+    },
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "Elizabeth Bennet",
+        "role": "protagonist",
+        "essence": "A sharp-witted young woman who must overcome her own prejudices to find love on equal terms.",
+        "traits": ["witty", "independent", "observant", "prejudiced", "loyal", "playful", "prideful"],
+        "arc": "Begins confident in her judgment of others → Has her certainties shattered by Darcy's letter → Grows into self-awareness → Chooses love freely",
+        "voice": "Playful irony and sharp retorts. Uses questions to deflect. Sample: 'I could easily forgive his pride, if he had not mortified mine.'",
+        "appearance": "Fine eyes, light and pleasing figure, tanned from country walks",
+        "desires": {
+          "stated": "To marry only for love",
+          "unstated": "To be seen as an equal by those who disdain her family"
+        },
+        "relationships": {
+          "char_2": { "dynamic": "enemies-to-lovers", "valence": -0.8 },
+          "char_3": { "dynamic": "devoted sisters", "valence": 0.9 },
+          "char_4": { "dynamic": "favorite daughter", "valence": 0.7 }
+        },
+        "firstChapter": 1
+      },
+      {
+        "id": "char_2",
+        "name": "Fitzwilliam Darcy",
+        "role": "protagonist",
+        "essence": "A proud aristocrat whose rigid principles mask a deeply honorable and vulnerable heart.",
+        "traits": ["proud", "honorable", "reserved", "loyal", "socially awkward", "generous", "judgmental"],
+        "arc": "Dismisses country society beneath him → Falls unwillingly in love → Humbled by rejection → Proves his character through selfless action → Earns love through respect",
+        "voice": "Formal and precise. Economical with words. Softens considerably when speaking to those he trusts. Sample: 'In vain have I struggled. It will not do. My feelings will not be repressed.'",
+        "appearance": "Tall, handsome, noble bearing. Dark hair and piercing eyes. Often stands apart from crowds.",
+        "desires": {
+          "stated": "To maintain his station and protect his sister",
+          "unstated": "To be loved for who he is, not his fortune"
+        },
+        "relationships": {
+          "char_1": { "dynamic": "enemies-to-lovers", "valence": 0.9 },
+          "char_5": { "dynamic": "devoted brother", "valence": 0.95 }
+        },
+        "firstChapter": 3
+      }
+    ],
+    "chapters": [
+      {
+        "id": "ch_1",
+        "title": "The Meryton Assembly",
+        "summary": "The Bennet family attends a local ball where the wealthy Mr. Bingley and his proud friend Mr. Darcy make their first appearance in Hertfordshire society.",
+        "charactersPresent": ["char_1", "char_3"],
+        "keyEvents": ["Bingley dances twice with Jane", "Darcy refuses all introductions, calls Elizabeth 'tolerable'"],
+        "atmosphere": { "light": "candlelit", "sound": "bustling", "temperature": "warm", "space": "open", "tension": "uneasy" }
+      }
+    ],
+    "styleFingerprint": {
+      "narrativeTemperature": { "value": 65, "label": "warm" },
+      "pacingType": "moderate",
+      "dialogueDensity": "high",
+      "perspectiveStrategy": "third limited (free indirect discourse)",
+      "descriptivePalette": ["faces", "social dynamics", "interiors", "wit"],
+      "tonalRange": { "primary": "ironic", "secondary": ["romantic", "satirical"] }
+    }
+  }
+}
